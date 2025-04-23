@@ -212,29 +212,29 @@ a{
 .faq-tabs ul{
     display: flex;
     background-color: var(--light-color);
-    padding: 15px;
+    padding: 10px 20px;
     border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
 }
-.faq-tabs ul li a{
-    margin: 10px 10px;
-    padding: 0 5px;
-    color: #131316;
+.faq-tabs ul li{
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: hsl(240, 7%, 8%);
     transition: 0.2s;
 }
-.faq-tabs ul li a:hover{
-    opacity: 0.5;
+.faq-tabs ul li:hover{
+    opacity: 0.6;
     background-color: #4891FF;
+    color: #131316;
     border-radius: 10px;
-    padding: 10px 20px;
-    
-
+    padding: 10px 15px
 }
-.faq-tabs ul li .faq-anchor-first{
+.faq-tabs ul li:active{
     background-color: var(--primary-color);
     color: #fff;
-    border-radius: 10px;
-    padding: 10px 20px;
-    
+    text-align: center;
+    opacity: 1;
 }
 .faq .faq-content{
     display: grid;
@@ -245,21 +245,29 @@ a{
     border-bottom: 2px solid #ccc;
     padding-bottom: 20px;
 }
+.faq-group-header{
+    padding: 10px 0;
+    margin-bottom: 15px;
+    position: relative;
+}
 .faq-group-header h4{
     font-weight: 600;
     width: 95%;
 
-    position: relative;
-    top: 0;
-    left: 0;
 }
 .faq-group-header .faq-icon{
+    position: absolute;
     cursor: pointer;
-    
+    right: 0;
+    top: 15px;
+    font-size: 1.3rem;
 
 }
-.faq-group-text {
+.faq .faq-group-text {
     display: none;
+}
+.faq .faq-group-text.open{
+    display: block;
 }
 
 
@@ -418,5 +426,8 @@ a{
 }
 
 @media(max-width: 480px) {
-    
+    .testimonials-grid{
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
 }
