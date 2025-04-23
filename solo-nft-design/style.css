@@ -254,7 +254,7 @@ nav.navbar .container{
         width: 80%;
         line-height: 160%;
     }
-    /* stock 3 */
+    /* stock 3 main */
     .stock{
         margin: 50px 0; 
         display: flex;
@@ -263,12 +263,17 @@ nav.navbar .container{
     }
     .stock .container{
 
-        width: 1200px;
-        height: 550px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr ;
+        
+        /* display: grid;
+        grid-template-columns: 1fr 0.8fr 1fr;
+        grid-template-rows: 1fr;
         gap: 1rem;
+        text-align: center; */
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: row;
+        gap: 30px;
     }
 
     .main-card{
@@ -277,7 +282,8 @@ nav.navbar .container{
     .main-card .main-img{
         max-width: 400px;
         max-height: 420px;
-
+        min-height: 150px;
+        min-height: 150px;
     }
     .main-card .main-text{
         display: flex;
@@ -324,15 +330,19 @@ nav.navbar .container{
         
     }
 
-    /* Stock 2 */
+    /* Stock 2 card */
     
 
     .stock-card.sm-stock-content{
-        display: grid;
+
+        /* display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr; 
+        grid-template-rows:; 
         justify-content: center;
-        align-items: center;
+        align-items: center; */
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
     }
 
     .sm-stock-card{
@@ -356,8 +366,9 @@ nav.navbar .container{
         flex-wrap: wrap;
         flex-direction: column;
     }
-    .sm-text-container h3{
-        display: block;
+    .sm-text-container div h3{
+        font-weight: 700;
+        font-size: 20px;
     }
     .small-card:first-child{
         flex-direction: column;
@@ -386,10 +397,256 @@ nav.navbar .container{
     .small-card:nth-child(2) p:nth-child(3){
         display: flex;
         padding: 5px;
-        margin: 5px;
+        margin: 5px 0;
+        font-size: 14px;
+        font-weight: 400;
+        color: #757575;
     }
+    .small-card button{
+        margin: 10px 15px;
+    }
+
+
+    /* Stock 3 card*/
         
+    .stock-card:last-child{
+        border-left: 1px solid #ECECEC;
+        
+    }
     
+    .third-card{
+        
+    }
+
+    .third-card h2{
+        margin-left: 10px;
+    }
+    .third-card p:nth-child(2){
+        color: #3D00B7;
+        margin-bottom: ;
+        margin-left: 15px;
+        
+    }
+
+    #top-collections {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+    }
+    #top-collections .profile-card{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: center;
+        /* margin: 10px 0; */
+        border-bottom: 1px solid #ECECEC ;
+        padding: 10px 5px;
+
+    }
+    .profile-card:last-child{
+        border: none;
+    }
+    #top-collections .profile-card h3{
+        display: flex;
+        flex-direction: row;
+        padding: 5px 10px;
+        justify-content: start;
+        align-items: center;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    #top-collections .profile-card img.profile-img-xl{
+        height: 50px;
+        width: 50px;
+    }
+    /* for img icon */
+    #top-collections .profile-card img.profile-img-xl{
+        height: 50px;
+        width: 50px;
+    }
+    #top-collections .profile-card h4{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 103%;
+    }
+    #top-collections .profile-card .child-profile-card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 5px;
+        /* margin: 10px; */
+        margin-top: 15px;
+        margin-right: 20px;
+    }
+    #top-collections .profile-card .child-profile-card span{
+        flex-direction: row;
+        display: flex;
+        margin-top: 5px ;
+    }
+    #top-collections .profile-card .child-profile-card svg {
+        
+    }
+    #top-collections .profile-card .child-profile-card p{
+        font-size: 14px;
+        color: #636363;
+        font-weight: 600;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+    
+    #top-collections .profile-card div:last-child p{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+
+
+            /* Collection feature nfts 4 main */
+
+    .collection-feature-nfts{
+        margin: 100px 0;
+        background-color: #D9E0EC33;
+        padding: 20px;
+    }
+    /* h1 text */
+    .collection-feature-nfts div h1{
+        display: flex;
+        justify-content: center;
+        align-items: start;
+    }
+    .collection-feature-nfts .container{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: row;
+        margin-left: 50px;
+        gap: 20px; 
+    }
+    .collection-card{
+        display: flex;
+        flex-direction: column;
+        margin: 30px 0;
+        padding: 10px 0;
+    }
+    .collection-card .grid-images{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .grid-images .card-grid-img{
+        
+    }
+    .grid-images .card-grid-img.main-grid-img{
+        max-width: 265px;
+        max-height: 270px;
+        border-radius: 11px;
+    }
+    .card-grid-img.small-images-container{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-left: 10px ;
+    }
+    .card-small-img{
+        max-width: 100px;
+        max-height: 85px;
+        border-radius: 11px;
+    }
+
+
+    .collection-card .collect-profile-text{
+        padding: 20px 5px;
+    }
+    .collection-card .collect-profile-text .card-collect-profile-text img{
+        width: 32px;
+        height: 32px;
+    }
+    .collect-profile-text .card-collect-profile-text{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        gap: 5px 10px;
+    }
+    .card-collect-profile-text h4{
+        padding: 0 5px;
+        margin-right: 120px;
+    }
+    .card-collect-profile-text div{
+        
+    }
+
+
+                /* Create and Sell 5 */
+    
+    #create-and-sell{
+        margin: 50px 0;
+    }
+    #create-and-sell .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 4rem 2rem;
+        gap: 3rem;
+        flex-wrap: wrap;
+    }
+    .create-img-container{
+        display: grid;
+        grid-template-columns: repeat(2, 150px);
+        grid-auto-rows: auto;
+        gap: 1.5rem;
+    }
+    .create-img-card {
+        position: relative;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+
+    .create-img-card img{
+        width: 100%;
+        display: block;
+        border-radius: 16px;
+    }
+    .create-img-card.large{
+        width: 300px;
+        height: 300px;
+        grid-column: span 2;
+    }
+    .create-img-card.medium{
+        width: 240px;
+        height: 260px;
+    }
+    .create-img-card.large{
+        width: 195px;
+        height: 215px;
+        align-self: end;
+    }
+    .profile-create-pic {
+        position: absolute;
+        bottom: -15px;
+        right: -15px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 3px solid white;
+        box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      }
+      .profile-create-pic img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+    
+
     
     
 
@@ -433,11 +690,29 @@ nav.navbar .container{
 
 }
 .text-md{
-
+    font-size: 0.9rem;
+    font-weight: 600;
 }
 .text-sm{
     font-size: 12px;
     font-weight: 400;
+}
+
+/* text-color */
+.text-color-green{
+    color: #14C8B0;
+    font-size: 20px;
+    width: 600;
+    letter-spacing: -2.0%;
+    text-align: right;
+    /* font-family: "Poppins"; */
+}
+.text-color-red{
+    color: #FF002E;
+    font-size: 20px;
+    width: 600;
+    letter-spacing: -2.0%;
+    text-align: right;
 }
 
 .profile-img-xl{
